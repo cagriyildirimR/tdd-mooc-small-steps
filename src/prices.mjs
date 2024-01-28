@@ -30,7 +30,6 @@ function createApp(database) {
     }
   }
 
-  const parseTDate = (dateString) => dateString ? Temporal.PlainDate.from(dateString): null;
 
   function calculateCost(age, type, date, baseCost) {
     if (type === "night") {
