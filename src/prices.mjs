@@ -89,7 +89,7 @@ function createApp(database) {
       let holiday = new Date(row.holiday);
       let holiday2 = parseTDate(row.holiday);
       if (
-        date && dateT &&
+        date && dateT && dateT.equals(holiday2) &&
         date.getFullYear() === holiday.getFullYear() &&
         date.getMonth() === holiday.getMonth() &&
         date.getDate() === holiday.getDate()
