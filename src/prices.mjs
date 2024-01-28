@@ -87,8 +87,7 @@ function createApp(database) {
     const holidays = database.getHolidays();
     for (let row of holidays) {
       let holiday2 = parseTDate(row.holiday);
-      if (
-        date && date.equals(holiday2)) {
+      if (date && date.equals(holiday2)) {
         return true;
       }
     }
