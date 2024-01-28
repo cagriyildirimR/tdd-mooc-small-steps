@@ -80,7 +80,7 @@ function createApp(database) {
   }
 
   function isMonday(date2, date) {
-    return date2.dayOfWeek === 1;
+    return date.dayOfWeek === 1;
   }
 
   function isHoliday(date, date2) {
